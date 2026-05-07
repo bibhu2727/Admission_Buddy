@@ -15,7 +15,7 @@ export async function createLead(formData: FormData) {
 
   const name = formData.get('name') as string;
   const phone = formData.get('phone') as string;
-  const channel = formData.get('channel') as string;
+  const channel = formData.get('channel') as 'agent' | 'reff' | 'direct';
   const remark = formData.get('remark') as string;
   const visitDate = formData.get('visitDate') as string;
 
